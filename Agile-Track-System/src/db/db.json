@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Chandru",
+      "email": "chandru@gmail.com",
+      "password": "chandru123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "email": "sam@gmail.com",
+      "password": "sam123",
+      "role": "employee"
+    },
+    {
+      "id": 3,
+      "name": "Rio",
+      "email": "rio@gmail.com",
+      "password": "rio123",
+      "role": "employee"
+    },
+    {
+      "name": "Prem",
+      "email": "prem@gmail.com",
+      "password": "123",
+      "role": "employee",
+      "id": 4
+    }
+  ],
+  "scrums": [
+    {
+      "id": 1,
+      "name": "Developers"
+    },
+    {
+      "id": 2,
+      "name": "Testers"
+    },
+    {
+      "name": "Developer",
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Development",
+      "description": "Develop and implement the frontend interface and backend for the Agile Track System using React.",
+      "status": "Done",
+      "scrumId": 1,
+      "assignedTo": 2,
+      "history": [
+        {
+          "status": "To Do",
+          "date": "2025-01-05"
+        },
+        {
+          "status": "In Progress",
+          "date": "2025-02-10"
+        },
+        {
+          "status": "Done",
+          "date": "2025-03-20"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Testing",
+      "description": "Perform unit testing, integration testing, and end-to-end (E2E) testing of the Agile Track System.",
+      "status": "In Progress",
+      "scrumId": 2,
+      "assignedTo": 3,
+      "history": [
+        {
+          "status": "To Do",
+          "date": "2025-01-05"
+        },
+        {
+          "status": "In Progress",
+          "date": "2025-02-10"
+        },
+        {
+          "status": "Done",
+          "date": "2025-03-20"
+        },
+        {
+          "status": "Done",
+          "date": "2025-03-21"
+        }
+      ]
+    },
+    {
+      "title": "Devoploment",
+      "description": "To develop backend",
+      "status": "To Do",
+      "scrumId": 3,
+      "assignedTo": "2",
+      "history": [
+        {
+          "status": "To Do",
+          "date": "2025-03-21"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

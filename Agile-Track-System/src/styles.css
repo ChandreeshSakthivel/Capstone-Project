@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 40px;
+    padding: 40px;
+}
+
+/* Main App Container */
+.app {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    height: 50px;
+    width: 97%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 70px;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #cc0000;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3, h4 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Login & Signup Buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.auth-buttons button {
+    width: 120px;
+}
+
+/* Centering Forms */
+.login-container, .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container form, .signup-container form {
+    width: 300px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-center {
+        display: none; /* Hide center links on small screens */
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
